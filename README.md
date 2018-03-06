@@ -1,4 +1,4 @@
-Flask Heroku Sample
+Flask Example Application
 ====================
 A simple Python Flask example application.
 
