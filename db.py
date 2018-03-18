@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from contextlib import contextmanager
 
-DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:////flask_app.db')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///flask_app.db')
 Base = declarative_base()
 
 
