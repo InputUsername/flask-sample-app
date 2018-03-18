@@ -5,6 +5,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from db import add_user, get_all_users
 
 app = Flask(__name__)
+dashboard.config.outlier_detection_constant = 0.1
 dashboard.bind(app)
 
 
