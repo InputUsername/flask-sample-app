@@ -1,0 +1,2 @@
+flask
+flask-monitoringdashboard>=1.11.0
