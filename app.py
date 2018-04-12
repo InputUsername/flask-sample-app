@@ -6,6 +6,7 @@ from db import add_user, get_all_users
 
 app = Flask(__name__)
 dashboard.config.outlier_detection_constant = 0.1
+dashboard.config.database_name = os.environ.get('DASHBOARD_DATABASE_URL', 'sqlite:///flask_monitoringdashboard.db')
 dashboard.bind(app)
 
 

@@ -5,9 +5,11 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+ENV FLASK_DEBUG 1
 ENV FLASK_APP app.py
-ENV DATABASE_URL sqlite:///flask_app.db
+ENV DATABASE_URL sqlite:///data/flask_app.db
+ENV DASHBOARD_DATABASE_URL sqlite:///data/flask_monitoringdashboard.db
 
-EXPOSE 5000
+EXPOSE 9001
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=9001"]

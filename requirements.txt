@@ -1,2 +1,2 @@
 flask
-flask-monitoringdashboard>=1.11.0
+flask-monitoringdashboard>=1.11.5

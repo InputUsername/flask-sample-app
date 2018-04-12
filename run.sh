@@ -1,6 +1,6 @@
 docker run --detach \
-	--restart=always \
+	--rm \
 	--volume flask-sample-app-volume:/data \
-	--publish 9001:5000 \
+	--publish 9001:9001 \
 	--name flask_sample_app \
 	flask-sample-app
